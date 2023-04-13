@@ -57,7 +57,7 @@ T patternScan(std::string s, LPCSTR m, int offset) {
 		}
 	}
 
-	VirtualProtectEx(GetCurrentProcess(), modInfo.lpBaseOfDll, modInfo.SizeOfImage, op, NULL);
+	//VirtualProtectEx(GetCurrentProcess(), modInfo.lpBaseOfDll, modInfo.SizeOfImage, op, NULL);
 	return address;
 }
 
