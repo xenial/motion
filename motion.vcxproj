@@ -107,7 +107,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;MOTION_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
@@ -165,6 +165,24 @@
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="interfaces.h" />
     <ClInclude Include="patternscanner.h" />
+    <ClInclude Include="sdk\CBaseHandle.h" />
+    <ClInclude Include="sdk\CBasePlayer.h" />
+    <ClInclude Include="sdk\CGlobalVarsBase.h" />
+    <ClInclude Include="sdk\ClientClass.h" />
+    <ClInclude Include="sdk\IBaseClientDLL.h" />
+    <ClInclude Include="sdk\IClientEntity.h" />
+    <ClInclude Include="sdk\IClientEntityList.h" />
+    <ClInclude Include="sdk\IClientMode.h" />
+    <ClInclude Include="sdk\IClientNetworkable.h" />
+    <ClInclude Include="sdk\IClientRenderable.h" />
+    <ClInclude Include="sdk\IClientUnknown.h" />
+    <ClInclude Include="sdk\IHandleEntity.h" />
+    <ClInclude Include="sdk\IVEngineClient.h" />
+    <ClInclude Include="sdk\QAngle.h" />
+    <ClInclude Include="sdk\Recv.h" />
+    <ClInclude Include="sdk\Vector.h" />
+    <ClInclude Include="sdk\Vector2D.h" />
+    <ClInclude Include="sdk\VMatrix.h" />
     <ClInclude Include="vmt.h" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +196,9 @@
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="interfaces.cpp" />
+    <ClCompile Include="sdk\CBasePlayer.cpp" />
+    <ClCompile Include="sdk\Vector2D.cpp" />
+    <ClCompile Include="sdk\VMatrix.cpp" />
     <ClCompile Include="vmt.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
