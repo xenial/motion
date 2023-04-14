@@ -1,11 +1,15 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "interfaces.h"
 #include "hooks.h"
+#include "logger.h"
 
 int hackThread() {
+    Logger::init();
     Interfaces::init();
+    Logger::conMsg("[motion] Interfaces initialized \n");
     Hooks::init();
-
+    Logger::conMsg("[motion] Hooks initialized \n");
+    
     return 1;
 }
 
