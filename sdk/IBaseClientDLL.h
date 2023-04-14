@@ -38,3 +38,5 @@ public:
 	virtual int				HudVidInit( void ) = 0;
 	virtual void			HudProcessInput( bool bActive ) = 0;
 };
+
+#define CLIENT_DLL_INTERFACE_VERSION		"VClient018"

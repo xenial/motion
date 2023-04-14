@@ -153,6 +153,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CUserCmd.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="hooks.h" />
     <ClInclude Include="imgui\imconfig.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="imgui\imstb_textedit.h" />
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="interfaces.h" />
+    <ClInclude Include="logger.h" />
     <ClInclude Include="patternscanner.h" />
     <ClInclude Include="sdk\CBaseHandle.h" />
     <ClInclude Include="sdk\CBasePlayer.h" />
@@ -196,6 +198,7 @@
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="interfaces.cpp" />
+    <ClCompile Include="logger.cpp" />
     <ClCompile Include="sdk\CBasePlayer.cpp" />
     <ClCompile Include="sdk\Vector2D.cpp" />
     <ClCompile Include="sdk\VMatrix.cpp" />
